@@ -22,12 +22,10 @@ int main(){
     });
 
     http.GET("/hello/:name", [](httpLib::Request request){
-        std::string jsonString ="{\"result\": \"Hello "
-                    + request.pathParams["name"] +"!\"}";
+        std::string jsonString ="{\"result\": \"Hello " + request.pathParams["name"] +"!\"}";
 
         for (auto i : request.queryParams) {
-            std::cout << "A query param:" <<
-                i.first << " " << i.second << std::endl;
+            std::cout << "A query param:" << i.first << " " << i.second << std::endl;
         }
 
         httpLib::Response response(200, "application/json", jsonString);
