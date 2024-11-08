@@ -50,6 +50,10 @@ configure cmake:
 ```bash
 cmake ../examples
 ```
+build:
+```bash
+make
+```
 then run example-server1 or example-server2:
 ```bash
 ./example-server1
