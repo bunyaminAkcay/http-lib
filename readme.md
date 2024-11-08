@@ -44,6 +44,7 @@ int main(){
 create build directory:
 ```bash
 mkdir build
+cd build
 ```
 configure cmake:
 ```bash
